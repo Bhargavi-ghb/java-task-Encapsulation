@@ -39,7 +39,7 @@ public class CreditCardAccount {
 	}
 	
 	public void swipeCard(double amount) {
-		if(amount>this.currentDebt) {
+		if(amount>this.creditLimit) {
 			System.out.println("Transcation declined: Limit exceeded");
 		}
 		else {
